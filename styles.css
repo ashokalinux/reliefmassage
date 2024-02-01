@@ -5,18 +5,33 @@
     box-sizing: border-box;
 }
 
+/* Body and main styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    padding-bottom: 100px; /* Adjusted to give space for the footer */
+    background: #f4f4f4; /* Light gray background */
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
 header {
-    background: #333;
-    color: #fff;
+    background: #005f73; /* A shade of dark blue */
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
 
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styling */
 nav ul {
     list-style: none;
 }
@@ -27,21 +42,67 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
+nav a:hover {
+    color: #a8dadc; /* Lighter blue for hover effect */
 }
 
+/* Section styling */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    color: #0077b6; /* Blue color for section headings */
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 1rem;
+}
+
+/* Contact section styling */
+#contact a {
+    display: inline-block;
+    background: #0077b6; /* Blue background for the button */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#contact a:hover {
+    background: #0096c7; /* Slightly lighter blue on hover */
+}
+
+/* Footer styling */
 footer {
-    background: #333;
-    color: #fff;
+    background: #005f73; /* Same as the header */
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
+    position: fixed; /* Fixed at the bottom */
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin-bottom: 0; /* Remove the default margin */
 }
