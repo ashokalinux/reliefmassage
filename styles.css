@@ -77,20 +77,59 @@ section img {
 }
 
 /* Contact section styling */
-#contact a {
+#contact {
+    text-align: center; /* Center the text */
+    padding: 2rem;
+    background: #0077b6; /* Blue background for contrast */
+    color: #ffffff; /* White text for readability */
+    border-radius: 8px; /* Rounded corners */
+    position: relative; /* Position relative for positioning pseudo-elements */
+}
+
+#contact h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+#contact .contact-info p {
+    font-size: 1rem; /* Slightly larger font size for contact info */
+}
+
+#contact .maps-link {
     display: inline-block;
-    background: #0077b6; /* Blue background for the button */
+    background: #005f73; /* Darker blue background for the button */
     color: #ffffff;
     padding: 10px 20px;
     margin-top: 1rem;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background 0.3s ease; /* Transition for hover effect */
 }
 
-#contact a:hover {
-    background: #0096c7; /* Slightly lighter blue on hover */
+#contact .maps-link:hover {
+    background: #0096c7; /* Lighter blue on hover */
 }
+
+/* Additional styles to improve overall look */
+#contact:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: inherit; /* Inherits the background from the contact section */
+    border-top-left-radius: 8px; /* Rounded corners at the top */
+    border-top-right-radius: 8px; /* Rounded corners at the top */
+}
+
+
 
 /* Footer styling */
 footer {
