@@ -145,3 +145,14 @@ footer {
 footer p {
     margin-bottom: 0; /* Remove the default margin */
 }
+
+.whatsapp-link {
+    display: inline-block;
+    color: #25D366;  /* WhatsApp brand color */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
