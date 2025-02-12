@@ -1,0 +1,158 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding-bottom: 100px; /* Adjusted to give space for the footer */
+    background: #f4f4f4; /* Light gray background */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background: #005f73; /* A shade of dark blue */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8dadc; /* Lighter blue for hover effect */
+}
+
+/* Section styling */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    color: #0077b6; /* Blue color for section headings */
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 1rem;
+}
+
+/* Contact section styling */
+#contact {
+    text-align: center; /* Center the text */
+    padding: 2rem;
+    background: #0077b6; /* Blue background for contrast */
+    color: #ffffff; /* White text for readability */
+    border-radius: 8px; /* Rounded corners */
+    position: relative; /* Position relative for positioning pseudo-elements */
+}
+
+#contact h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+#contact .contact-info p {
+    font-size: 1rem; /* Slightly larger font size for contact info */
+}
+
+#contact .maps-link {
+    display: inline-block;
+    background: #005f73; /* Darker blue background for the button */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background 0.3s ease; /* Transition for hover effect */
+}
+
+#contact .maps-link:hover {
+    background: #0096c7; /* Lighter blue on hover */
+}
+
+/* Additional styles to improve overall look */
+#contact:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: inherit; /* Inherits the background from the contact section */
+    border-top-left-radius: 8px; /* Rounded corners at the top */
+    border-top-right-radius: 8px; /* Rounded corners at the top */
+}
+
+
+
+/* Footer styling */
+footer {
+    background: #005f73; /* Same as the header */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed; /* Fixed at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0; /* Remove the default margin */
+}
+
+.whatsapp-link {
+    display: inline-block;
+    color: #25D366;  /* WhatsApp brand color */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
